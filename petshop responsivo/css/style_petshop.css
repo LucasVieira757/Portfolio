@@ -1,0 +1,191 @@
+/* Tags Gerais (elemento) */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    text-align: center;
+    padding: 10px 0;
+    background-image: url('../imagens/fundo-topo.jpg')
+}
+
+header h1{
+    margin: 0;
+    height:84px;
+}
+
+nav{
+    margin: 0;
+    padding: 15px 0;
+    text-align: center;
+}
+nav li{
+    display: inline;
+    background-image: url('../imagens/patinha-preta.png');
+    background-repeat: no-repeat; /* não deixa a patinha repetir */
+    background-position: center right; /*posiciona o background no centro e a direta */
+    padding-right: 27px;/* 27px de espaçamento da margem direita*/
+    margin-right: 10px;/*aplicará uma margim entre a primeira patinha e o segundo item do menu*/
+
+}
+nav a{
+    color:#000;
+    text-decoration: none;
+    }
+nav a:hover{
+    color: #6DD432;
+}
+
+.fundo-verde{
+    background-color: #bdff9c;
+}
+.container{
+    width: 900px;
+    margin: 0 auto;
+    padding: 56px 0;
+}
+.container .col{
+    width: 430px;
+
+}
+ .flex-container{
+    display: flex;
+    justify-content: space-between
+    
+}
+.produto{
+    width: 235px;
+}
+.produto figure {
+    border: 1px solid #c4c4c4;
+    background-color: #fff;
+    margin: 0 0 15px 0 ;
+    padding: 0; 
+    text-align: center;
+    height: 160px;
+    line-height: 160px;
+}
+.produto figure img{
+    vertical-align: middle;
+}
+.texto-centralizado{
+    text-align: center;
+}
+.btn-pata{
+    border: 1px solid #91e467;
+    background-color: #d2fbbd;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form{
+    width: 380px;
+}
+form input, 
+form textarea{
+    width: 100%;
+    border: 1px solid #6DD432;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    
+}
+iframe {
+    width: 100%;
+}
+h2{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+#produto .flex-container, #contato .flex-container{
+    margin-top: 43px;
+}
+#itemcontato{
+    background-image: none;
+    padding: right 0;
+    margin-right: 0;
+    
+}
+.footer {
+    height: 700px;
+  }
+
+
+/* Sticky footer style and color
+-------------------------------------------------- */
+footer {
+padding-top: 30px;
+background-color: #292c2f;
+color: #bbb;
+}
+
+footer a {
+color: #999;
+text-decoration:none;
+}
+
+footer a:hover, footer a:focus {
+color: #aaa;
+text-decoration:none;
+border-bottom:1px dotted #999;
+}
+
+footer .form-control {
+  background-color: #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  color: #d1d2d2;
+  padding: 0.7em 1em;
+  
+}
+@media  screen and ( max-width:480px)
+{
+    
+    .flex-container{
+        flex-direction: column;
+        display: flex;
+        padding: 10px; 
+             
+        
+    }  
+    .container{
+        width: 480px;
+        padding: 56px 0;
+        margin:0 auto;
+    }   
+
+    .col{
+        padding: 10px;
+    }
+    .produto{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .h2{
+        text-align: center
+    }
+
+    .h3{
+        text-align: center;
+    }
+    .p{
+        text-align: center;
+    }
+    .btn-pata{
+        text-align: center;
+    }
+    #centro{
+        text-align: center;
+    }
+
+}
